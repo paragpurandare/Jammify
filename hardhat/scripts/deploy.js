@@ -5,6 +5,6 @@ async function main() {
   const proxy = await upgrades.deployProxy(bookingProxy, [23]);
   await proxy.deployed();
 
-  console.log(proxy.address);
+  console.log(proxy.target);
 }
 main();
